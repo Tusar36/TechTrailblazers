@@ -32,7 +32,7 @@ export default function Home() {
 
   return !LoadingFlag ? (
     <>
-      <header className="w-[100%] bg-gray-800 h-[95vh] flex flex-col items-center justify-center gap-12">
+      <header className="w-[100%] bg-blue-800 h-[95vh] flex flex-col items-center justify-center gap-12">
         <p className="text-4xl text-white font-bold md:text-6xl">
           TechTrailblazers
         </p>
