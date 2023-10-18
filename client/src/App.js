@@ -42,7 +42,7 @@ function App() {
         setLogined(false);
       }
     } catch (error) {
-      toast.success("Blog Updated", {
+      toast.error("NetWork Error", {
         position: toast.POSITION.TOP_CENTER,
       });
     }

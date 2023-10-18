@@ -18,7 +18,7 @@ export default function MyBlog() {
     try {
       setLoadingFlag(true);
       const result = await axios.get(
-        `${process.env.REACT_APP_API}/blog/q/${UserInfo.name}`
+        `https://tech-trailblazers-api.onrender.com/blog/q/${UserInfo.name}`
       );
       setData(result.data.data);
       setLoadingFlag(false);

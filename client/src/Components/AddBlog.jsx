@@ -19,7 +19,7 @@ export default function AddBlog(props) {
         author: UserInfo.name,
       }
     );
-    toast.success("Blog Publihed!", {
+    toast.success("Blog Published!", {
       position: toast.POSITION.TOP_CENTER,
     });
     navi("/");
