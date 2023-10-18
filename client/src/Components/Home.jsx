@@ -15,7 +15,9 @@ export default function Home() {
   const [LoadingFlag, setLoadingFlag] = useState(true);
   const FetchAllBlogs = async () => {
     try {
-      const result = await axios.get(`${process.env.REACT_APP_API}/blog/`);
+      const result = await axios.get(
+        `https://tech-trailblazers-api.onrender.com/blog/`
+      );
       setBlogs(result.data.data);
       setLoadingFlag(false);
     } catch (error) {

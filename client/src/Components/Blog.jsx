@@ -16,7 +16,9 @@ export default function Blog() {
   const FetchData = async () => {
     try {
       setLoadingFlag(true);
-      const result = await axios.get(`${process.env.REACT_APP_API}/blog/${id}`);
+      const result = await axios.get(
+        `https://tech-trailblazers-api.onrender.com/blog/${id}`
+      );
       setData(result.data.result);
       setLoadingFlag(false);
     } catch (error) {
@@ -33,7 +35,9 @@ export default function Blog() {
 
   const DeleteBlog = async () => {
     try {
-      await axios.get(`${process.env.REACT_APP_API}/blog/delete/${id}`);
+      await axios.get(
+        `https://tech-trailblazers-api.onrender.com/blog/delete/${id}`
+      );
       toast.success("Blog Deleted!", {
         position: toast.POSITION.TOP_CENTER,
       });

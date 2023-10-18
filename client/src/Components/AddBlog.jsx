@@ -11,11 +11,14 @@ export default function AddBlog(props) {
   const navi = useNavigate();
   const Publish = async (e) => {
     e.preventDefault();
-    const result = await axios.post(`${process.env.REACT_APP_API}/blog/add`, {
-      title,
-      content,
-      author: UserInfo.name,
-    });
+    const result = await axios.post(
+      `https://tech-trailblazers-api.onrender.com/blog/add`,
+      {
+        title,
+        content,
+        author: UserInfo.name,
+      }
+    );
     toast.success("Blog Publihed!", {
       position: toast.POSITION.TOP_CENTER,
     });

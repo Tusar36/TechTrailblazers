@@ -25,7 +25,7 @@ function App() {
   const Verify = async () => {
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API}/auth/verify`,
+        `https://tech-trailblazers-api.onrender.com/auth/verify`,
         {
           token: localStorage.getItem("token"),
         }

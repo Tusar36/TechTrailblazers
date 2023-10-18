@@ -21,7 +21,7 @@ export default function Login() {
     } else {
       try {
         const result = await axios.post(
-          `${process.env.REACT_APP_API}/auth/login`,
+          `https://tech-trailblazers-api.onrender.com/auth/login`,
           {
             password,
             email,

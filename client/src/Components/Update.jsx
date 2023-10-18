@@ -14,7 +14,9 @@ export default function Update() {
   const FetchData = async () => {
     try {
       setLoadingFlag(true);
-      const result = await axios.get(`${process.env.REACT_APP_API}/blog/${id}`);
+      const result = await axios.get(
+        `https://tech-trailblazers-api.onrender.com/blog/${id}`
+      );
       setContent(result.data.result.content);
       setTitle(result.data.result.title);
       setLoadingFlag(false);
@@ -28,11 +30,14 @@ export default function Update() {
   const UpdateHandler = async (e) => {
     try {
       e.preventDefault();
-      await axios.post(`${process.env.REACT_APP_API}/blog/update`, {
-        title: title,
-        content: content,
-        id: id,
-      });
+      await axios.post(
+        `https://tech-trailblazers-api.onrender.com/blog/update`,
+        {
+          title: title,
+          content: content,
+          id: id,
+        }
+      );
       toast.success("Blog Updated", {
         position: toast.POSITION.TOP_CENTER,
       });

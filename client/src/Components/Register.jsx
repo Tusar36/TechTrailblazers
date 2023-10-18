@@ -24,7 +24,7 @@ export default function Login() {
       try {
         setLoad(true);
         const result = await axios.post(
-          `${process.env.REACT_APP_API}/auth/register`,
+          `https://tech-trailblazers-api.onrender.com/auth/register`,
           {
             name: name,
             password: password,
