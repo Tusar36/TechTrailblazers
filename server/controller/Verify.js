@@ -5,7 +5,7 @@ const Verify = async (req, res) => {
   try {
     const verify = JWT.verify(
       token,
-      process.env.PRIVATE,
+      "iamtusarkantimandal",
       async (error, decode) => {
         if (error) {
           res.json({

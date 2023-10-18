@@ -17,7 +17,7 @@ const Login = async (req, res) => {
       message: "Password Incorrect",
     });
   } else {
-    const token = JWT.sign({ _id: Check._id }, process.env.PRIVATE);
+    const token = JWT.sign({ _id: Check._id }, "iamtusarkantimandal");
     res.status(200).json({
       name: Check.name,
       email: email,
