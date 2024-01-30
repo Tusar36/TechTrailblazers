@@ -18,7 +18,7 @@ export default function Home() {
       const result = await axios.get(
         `https://tech-trailblazers-api.onrender.com/blog/`
       );
-      setBlogs(result.data.data);
+      setBlogs(result.data.data.reverse());
       setLoadingFlag(false);
     } catch (error) {
       toast.error("Network Error", {
