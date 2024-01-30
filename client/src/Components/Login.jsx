@@ -59,7 +59,7 @@ export default function Login() {
           className="border border-gray-600 py-2 px-6 my-5 outline-none"
           placeholder="Enter your email"
           onChange={(e) => {
-            setEmail(e.target.value);
+            setEmail(e.target.value.trim(" "));
           }}
           value={email}
         />
