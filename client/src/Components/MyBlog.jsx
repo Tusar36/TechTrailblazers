@@ -46,7 +46,7 @@ export default function MyBlog() {
           <span className="text-2xl mr-2">&#x2B;</span> Add Blog
         </button>
       </div>
-      <div className="w-screen h-screen flex justify-center flex-wrap gap-10 mt-10 mb-10 ">
+      <div className="w-screen min-h-screen flex justify-center flex-wrap gap-10 mt-10 mb-10 ">
         {data.map((e) => {
           return (
             <Card
