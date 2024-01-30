@@ -76,7 +76,7 @@ export default function Blog() {
           </h1>
         )}
         <div
-          className="px-12 min-h-[100vh] w-[100%] mb-12"
+          className="px-5 min-h-[100vh] w-[100%] mb-12"
           readOnly
           style={{ whiteSpace: "pre-line" }}
         >
